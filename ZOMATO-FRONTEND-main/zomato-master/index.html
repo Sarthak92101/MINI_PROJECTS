@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      href="https://b.zmtcdn.com/images/logo/zomato_logo_2017.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/9e6b5b84ae.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Zomato</title>
+  </head>
+  <body>
+    <header
+      class="bg-[url(https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png)] bg-cover"
+    >
+      <nav
+        class="flex max-w-[1100px] my-0 mx-auto text-white p-5 justify-between items-center"
+      >
+        <button>Get the App</button>
+
+        <ul class="hidden md:flex gap-8">
+          <li class="cursor-pointer">Investor Relations</li>
+          <li class="cursor-pointer">Add restaurant</li>
+          <li class="cursor-pointer">Log in</li>
+          <li class="cursor-pointer">Sign up</li>
+        </ul>
+
+          <div class="md:hidden flex flex-col gap-1">
+              <div class="h-0.5 w-5 bg-white rounded-full"></div>
+              <div class="h-0.5 w-5 bg-white rounded-full"></div>
+              <div class="h-0.5 w-5 bg-white rounded-full"></div>
+          </div>
+      </nav>
+      <div class="flex flex-col justify-center items-center mt-28">
+        <div class="flex w-80">
+          <img
+            src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png"
+            alt="logo"
+            class="w-full"
+          />
+        </div>
+
+        <div>
+          <h1 class="text-white p-4 text-xl md:text-4xl my-8 font-normal">
+            Discover the best food & drinks in Delhi NCR
+          </h1>
+        </div>
+
+        <div class="flex relative mb-16 md:w-[800px]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 absolute left-3 top-3"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+            />
+          </svg>
+          <input
+            type="text"
+            placeholder="Search for restaurant, cuisine or dish"
+            class="focus:outline-0 py-3 pl-10 md:pl-12 md:pr-20 rounded-2xl w-full"
+          />
+        </div>
+      </div>
+    </header>
+
+    <section class="recipes-cards flex-col sm:flex-row flex gap-4 max-w-[1100px] mx-auto my-10 px-10 sm:px-2 md:px-0">
+      <div
+        class="cards rounded-2xl overflow-hidden relative border-2 hover:scale-105 transition-transform"
+      >
+        <img
+          src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+          alt="card-1"
+          class="w-full"
+        />
+        <div class="absolute bottom-0 bg-white w-full p-2 md:p-5">
+          <h2 class="text-[#363636] text-lg">Order Online</h2>
+          <p class="text-[#4F4F4F]">Stay home and order to your doorstep</p>
+        </div>
+      </div>
+      <div
+        class="cards rounded-2xl overflow-hidden relative border-2 hover:scale-105 transition-transform"
+      >
+        <img
+          src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+          alt="card-2"
+          class="w-full"
+        />
+        <div class="absolute bottom-0 bg-white w-full p-2 md:p-5">
+          <h2 class="text-[#363636] text-lg">Dinning</h2>
+          <p class="text-[#4F4F4F]">View the city's favourite dining venus</p>
+        </div>
+      </div>
+      <div
+        class="cards rounded-2xl overflow-hidden relative border-2 hover:scale-105 transition-transform"
+      >
+        <img
+          src="https://b.zmtcdn.com/webFrontend/d9d80ef91cb552e3fdfadb3d4f4379761647365057.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+          alt="card-3"
+          class="w-full"
+        />
+        <div class="absolute bottom-0 bg-white w-full p-2 md:p-5">
+          <h2 class="text-[#363636] text-lg">Nightlife and Clubs</h2>
+          <p class="text-[#4F4F4F]">Explore the city's top nightlife outlets</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-[1100px] mx-auto my-8 px-10 sm:px-2 md:px-0">
+      <div class="flex flex-col gap-2">
+        <h2 class="text-4xl font-semibold">Collections</h2>
+        <div class="flex justify-between">
+          <p class="text-[#363636] text-lg">
+            Explore curated lists of top restaurants, cafés, pubs, and bars in
+            Delhi NCR, based on trends.
+          </p>
+          <p class="text-red-500 cursor-pointer hidden md:flex">
+            All collections in Delhi NCR
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="cards-container flex-col sm:flex-row flex gap-4 my-4">
+        <div class="cards rounded-2xl overflow-hidden relative">
+          <img
+            src="https://images.pexels.com/photos/1322184/pexels-photo-1322184.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="img-1"
+            class="h-60 backdrop-blur-sm grayscale-[60%] w-full"
+          />
+          <div class="absolute bottom-0 py-2 px-4 text-white">
+            <h3 class="font-semibold">Newly Opened Restaurants</h3>
+            <p class="flex">
+              10 Places
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </p>
+          </div>
+        </div>
+        <div class="cards rounded-2xl overflow-hidden relative">
+          <img
+            src="https://images.pexels.com/photos/1449775/pexels-photo-1449775.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="img-2"
+            class="h-60 backdrop-blur-sm grayscale-[60%] w-full"
+          />
+          <div class="absolute bottom-0 py-2 px-4 text-white">
+            <h3 class="font-semibold">Unique Dining Experiences</h3>
+            <p class="flex">
+              11 Places
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </p>
+          </div>
+        </div>
+        <div class="cards rounded-2xl overflow-hidden relative">
+          <img
+            src="https://images.pexels.com/photos/776538/pexels-photo-776538.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="img-3"
+            class="h-60 backdrop-blur-sm grayscale-[60%] w-full"
+          />
+          <div class="absolute bottom-0 py-2 px-4 text-white">
+            <h3 class="font-semibold">Best Insta-worthy Places</h3>
+            <p class="flex">
+              21 Places
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-[1100px] mx-auto my-16 px-10 sm:px-2 md:px-0">
+      <h2 class="text-4xl">
+        Popular localities in and around
+        <span class="font-semibold">Delhi NCR</span>
+      </h2>
+      <div class="card-container grid grid-cols-1 md:grid-cols-3 gap-4 my-4">
+        <div
+          class="flex justify-between p-4 border-2 rounded-2xl cursor-pointer hover:shadow-lg transition-shadow"
+        >
+          <div>
+            <h3 class="text-lg">Connaught Place</h3>
+            <p class="font-light">262 places</p>
+          </div>
+          <div class="flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          class="flex justify-between p-4 border-2 rounded-2xl cursor-pointer hover:shadow-lg transition-shadow"
+        >
+          <div>
+            <h3 class="text-lg">Sector 29</h3>
+            <p class="font-light">149 places</p>
+          </div>
+          <div class="flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          class="flex justify-between p-4 border-2 rounded-2xl cursor-pointer hover:shadow-lg transition-shadow"
+        >
+          <div>
+            <h3 class="text-lg">Sector 18, Noida</h3>
+            <p class="font-light">218 places</p>
+          </div>
+          <div class="flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          class="flex justify-between p-4 border-2 rounded-2xl cursor-pointer hover:shadow-lg transition-shadow"
+        >
+          <div>
+            <h3 class="text-lg">Rajouri Garden</h3>
+            <p class="font-light">350 places</p>
+          </div>
+          <div class="flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          class="flex justify-between p-4 border-2 rounded-2xl cursor-pointer hover:shadow-lg transition-shadow"
+        >
+          <div>
+            <h3 class="text-lg">Saket</h3>
+            <p class="font-light">336 places</p>
+          </div>
+          <div class="flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          class="flex justify-between p-4 border-2 rounded-2xl cursor-pointer hover:shadow-lg transition-shadow"
+        >
+          <div>
+            <h3 class="text-lg">DLF Cyber City</h3>
+            <p class="font-light">177 places</p>
+          </div>
+          <div class="flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          class="flex justify-between p-4 border-2 rounded-2xl cursor-pointer hover:shadow-lg transition-shadow"
+        >
+          <div>
+            <h3 class="text-lg">Gold Course Road</h3>
+            <p class="font-light">160 places</p>
+          </div>
+          <div class="flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          class="flex justify-between p-4 border-2 rounded-2xl cursor-pointer hover:shadow-lg transition-shadow"
+        >
+          <div>
+            <h3 class="text-lg">DLF Phase 4</h3>
+            <p class="font-light">230 places</p>
+          </div>
+          <div class="flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          class="flex justify-center items-center p-4 border-2 rounded-2xl cursor-pointer hover:shadow-lg transition-shadow"
+        >
+          <h3 class="text-lg">see more</h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 4.5l7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#FFFBF7] p-16 my-16">
+      <div class="max-w-[1100px] mx-auto flex-col md:flex-row flex justify-center items-center">
+        <div class="md:w-1/3 flex justify-end">
+          <img
+            src="https://b.zmtcdn.com/data/o2_assets/f773629053b24263e69f601925790f301680693809.png"
+            alt="img-5"
+            class="w-60"
+          />
+        </div>
+        <div class="md:w-2/4 flex flex-col items-center md:items-start">
+          <h3 class="text-4xl font-semibold my-1">Get the Zomato app</h3>
+          <p class="font-light text-lg">
+            We will send you a link, open it on your phone to download the app
+          </p>
+          <div class="flex gap-8 my-4">
+            <div class="flex gap-2">
+              <input type="radio" name="email" id="email" class="" />
+              <label for="email">Email</label>
+            </div>
+            <div class="flex gap-2">
+              <input type="radio" name="phone" id="phone" />
+              <label for="phone">Phone</label>
+            </div>
+          </div>
+
+          <div class="flex gap-4 flex-col xl:flex-row">
+            <div>
+              <input
+                type="text"
+                placeholder="Email"
+                class="py-2 focus:outline-0 border-2 px-4 rounded"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <button class="py-2 px-4 bg-red-500 text-white rounded-md">
+                Share App Link
+              </button>
+            </div>
+          </div>
+
+          <div class="my-6">
+            <h3 class="my-2 text-gray-400 font-light text-center md:text-start">Download app from</h3>
+            <div class="flex gap-4">
+              <img
+                src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png"
+                alt="playstore"
+                class="w-40"
+              />
+              <img
+                src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png"
+                alt="appstore"
+                class="w-40"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-[1100px] mx-auto flex flex-col gap-4 px-10 sm:px-2 md:px-0">
+      <h3 class="text-4xl font-normal">Explore options near me</h3>
+      <div class="flex flex-col gap-4 my-4">
+        <div class="flex justify-between p-4 border-2 rounded cursor-pointer">
+          <h4 class="text-lg">Popular cuisines near me</h4>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+        </div>
+        <div class="flex justify-between p-4 border-2 rounded cursor-pointer">
+          <h4 class="text-lg">Popular restaurant types near me</h4>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+        </div>
+        <div class="flex justify-between p-4 border-2 rounded cursor-pointer">
+          <h4 class="text-lg">Top Restaurant Chains</h4>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+        </div>
+        <div class="flex justify-between p-4 border-2 rounded cursor-pointer">
+          <h4 class="text-lg">Cities We Deliver To</h4>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-100 pt-16 mt-8">
+      <div class="max-w-[1100px] mx-auto px-10 sm:px-2 md:px-0">
+        <div class="flex flex-wrap justify-between">
+          <img
+            src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*"
+            alt="logo"
+          />
+          <div class="hidden md:flex gap-4">
+            <div>
+              <select class="p-2">
+                <option value="India">India</option>
+              </select>
+            </div>
+            <div>
+              <select class="p-2">
+                <option value="English">English</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap justify-between mt-4">
+          <div class="flex flex-col gap-2">
+            <h4 class="tracking-wider">ABOUT ZOMATO</h4>
+            <ul class="text-[#696969] font-light">
+              <li class="hover:text-gray-700">Who We Are</li>
+              <li class="hover:text-gray-700">Blog</li>
+              <li class="hover:text-gray-700">Work With Us</li>
+              <li class="hover:text-gray-700">Investor Relations</li>
+              <li class="hover:text-gray-700">Report Fraud</li>
+              <li class="hover:text-gray-700">Press Kit</li>
+              <li class="hover:text-gray-700">Contact Us</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-2">
+            <h4 class="tracking-wider">ZOMAVERSE</h4>
+            <ul class="text-[#696969] font-light">
+              <li class="hover:text-gray-700">Zomato</li>
+              <li class="hover:text-gray-700">Blinkit</li>
+              <li class="hover:text-gray-700">Feeding India</li>
+              <li class="hover:text-gray-700">Hyperpure</li>
+              <li class="hover:text-gray-700">Zomaland</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-2">
+            <div class="flex flex-col gap-2">
+              <h4 class="tracking-wider">FOR RESTAURENTS</h4>
+              <ul class="text-[#696969] font-light">
+                <li class="hover:text-gray-700">Partner With Us</li>
+                <li class="hover:text-gray-700">Apps For You</li>
+              </ul>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h4 class="tracking-wider">FOR ENTERPRISES</h4>
+              <ul class="text-[#696969] font-light">
+                <li class="hover:text-gray-700">Zomato For Enterprise</li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2">
+            <h4 class="tracking-wider">LEARN MORE</h4>
+            <ul class="text-[#696969] font-light">
+              <li class="hover:text-gray-700">Privacy</li>
+              <li class="hover:text-gray-700">Security</li>
+              <li class="hover:text-gray-700">Terms</li>
+              <li class="hover:text-gray-700">Sitemap</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-1">
+            <h4 class="tracking-wider">SOCIAL LINKS</h4>
+            <div class="flex gap-2 mb-4">
+              <i
+                class="fa-brands fa-linkedin-in text-white bg-black rounded-full flex items-center justify-center w-6 h-6 cursor-pointer"
+              ></i>
+              <i
+                class="fa-brands fa-instagram text-white bg-black rounded-full flex items-center justify-center w-6 h-6 cursor-pointer"
+              ></i>
+              <i
+                class="fa-brands fa-x-twitter text-white bg-black rounded-full flex items-center justify-center w-6 h-6 cursor-pointer"
+              ></i>
+              <i
+                class="fa-brands fa-youtube text-white bg-black rounded-full flex items-center justify-center w-6 h-6 cursor-pointer"
+              ></i>
+              <i
+                class="fa-brands fa-facebook text-white bg-black rounded-full flex items-center justify-center w-6 h-6 cursor-pointer"
+              ></i>
+            </div>
+            <div class="flex flex-col gap-4">
+              <img
+                src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png"
+                alt="App Store"
+                class="w-40"
+              />
+              <img
+                src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png"
+                alt="Google Play Store"
+                class="w-40"
+              />
+            </div>
+          </div>
+        </div>
+        <hr class="mt-4 border-black" />
+        <p class="text-sm py-4">
+          By continuing past this page, you agree to our Terms of Service,
+          Cookie Policy, Privacy Policy and Content Policies. All trademarks are
+          properties of their respective owners. 2008-2023 © Zomato™ Ltd. All
+          rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
